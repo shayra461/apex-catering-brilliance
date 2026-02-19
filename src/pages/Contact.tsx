@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { CheckCircle, Phone, Mail, MapPin } from "lucide-react";
-import heroContact from "@/assets/hero-contact.jpg";
+import heroContact from "@/assets/hero-contact2.jpg";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
