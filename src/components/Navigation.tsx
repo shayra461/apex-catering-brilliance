@@ -41,13 +41,13 @@ export default function Navigation() {
         }`}
       >
         <div className="container mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
-              <img
+            <img
                 src={logo}
                 alt="Apex SVC Catering Services"
-                className="h-14 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
 
