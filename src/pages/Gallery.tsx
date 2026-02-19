@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 import heroCatering from "@/assets/hero-catering.jpg";
 import heroHome from "@/assets/hero-home.jpg";
-import heroHelly from "@/assets/hero-helly.jpg";
+import heroHealthy from "@/assets/hero-healthy.jpg";
 import heroUsual from "@/assets/hero-usual.jpg";
 import heroAbout from "@/assets/hero-about.jpg";
 import galleryBurger from "@/assets/gallery-burger.jpg";
@@ -14,7 +14,7 @@ import Footer from "@/components/Footer";
 const galleryImages = [
   { src: heroCatering, alt: "Luxury catering event setup", span: "col-span-2 row-span-2" },
   { src: heroUsual, alt: "Gourmet burger close-up", span: "" },
-  { src: heroHelly, alt: "Fresh healthy food spread", span: "" },
+  { src: heroHealthy, alt: "Fresh healthy food spread", span: "" },
   { src: heroHome, alt: "Premium burger selection", span: "" },
   { src: heroAbout, alt: "Chef preparing food", span: "" },
   { src: galleryBurger, alt: "Artisan cheeseburger", span: "" },
@@ -100,7 +100,7 @@ export default function Gallery() {
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
                   <div className="w-12 h-12 rounded-full border border-gold/80 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 scale-75 group-hover:scale-100">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-gold">
-                      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35M11 8v6M8 11h6"/>
+                      <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35M11 8v6M8 11h6" />
                     </svg>
                   </div>
                 </div>
@@ -114,7 +114,7 @@ export default function Gallery() {
       <section className="py-16 bg-obsidian">
         <div className="container mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[heroHelly, heroHome, heroAbout].map((img, i) => (
+            {[heroHealthy, heroHome, heroAbout].map((img, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}

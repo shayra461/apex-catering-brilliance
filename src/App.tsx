@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import MenuUsual from "./pages/MenuUsual";
-import MenuHelly from "./pages/MenuHelly";
+import MenuHealthy from "./pages/MenuHealthy";
 import HowItWorks from "./pages/HowItWorks";
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
@@ -23,7 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/menu-usual" element={<MenuUsual />} />
-          <Route path="/menu-helly" element={<MenuHelly />} />
+          <Route path="/menu-healthy" element={<MenuHealthy />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />

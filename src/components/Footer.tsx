@@ -16,7 +16,7 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <img src={logo} alt="Apex SVC Catering Services" className="h-24 w-auto mb-6" />
             <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-xs mb-6">
-              Scratch-made, guilt-free catering for events of all sizes. 
+              Scratch-made, guilt-free catering for events of all sizes.
               A healthier twist on your favourite flavours — crafted with premium ingredients.
             </p>
             <div className="flex gap-4">
@@ -58,7 +58,7 @@ export default function Footer() {
               {[
                 { label: "Home", href: "/" },
                 { label: "Your Usual Menu", href: "/menu-usual" },
-                { label: "Helly Food", href: "/menu-helly" },
+                { label: "Healthy Food", href: "/menu-healthy" },
                 { label: "How It Works", href: "/how-it-works" },
                 { label: "Gallery", href: "/gallery" },
                 { label: "About James", href: "/about" },

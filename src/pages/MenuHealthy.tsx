@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle, Leaf } from "lucide-react";
-import heroHelly from "@/assets/hero-helly.jpg";
+import heroHealthy from "@/assets/hero-healthy.jpg";
 import freshIngredients from "@/assets/fresh-ingredients.jpg";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const hellyItems = [
+const healthyItems = [
   {
     name: "Lean Turkey Burger",
     desc: "Lean ground turkey patty, avocado, spinach, tomato, and herb aioli on a whole-grain bun.",
@@ -26,7 +26,7 @@ const hellyItems = [
     tag: "Veg Friendly",
   },
   {
-    name: "Helly Protein Dog",
+    name: "Healthy Protein Dog",
     desc: "Chicken sausage in a whole-wheat bun with fresh salsa, spinach, and mustard.",
     price: "From $9",
     tag: "Lighter Option",
@@ -54,7 +54,7 @@ const differentiators = [
   "Suitable for health-conscious corporate events",
 ];
 
-export default function MenuHelly() {
+export default function MenuHealthy() {
   return (
     <main className="bg-obsidian min-h-screen">
       <Navigation />
@@ -67,7 +67,7 @@ export default function MenuHelly() {
           animate={{ scale: 1 }}
           transition={{ duration: 8, ease: "easeOut" }}
         >
-          <img src={heroHelly} alt="Helly Food Healthy Menu" className="w-full h-full object-cover" />
+          <img src={heroHealthy} alt="Healthy Food Healthy Menu" className="w-full h-full object-cover" />
         </motion.div>
         <div className="hero-overlay absolute inset-0" />
         <div className="relative z-10 text-center px-6">
@@ -89,7 +89,7 @@ export default function MenuHelly() {
             transition={{ delay: 0.5, duration: 0.9 }}
             className="font-display text-5xl md:text-7xl font-bold mb-4"
           >
-            Helly <span className="text-gold-gradient italic">Food</span>
+            Healthy <span className="text-gold-gradient italic">Food</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
@@ -117,7 +117,7 @@ export default function MenuHelly() {
                 The Difference is in the <span className="text-gold-gradient italic">Details</span>
               </h2>
               <p className="font-body text-sm text-muted-foreground leading-relaxed mb-8">
-                Traditional fast food cuts corners — we don't. Helly Food was born from a belief that you shouldn't 
+                Traditional fast food cuts corners — we don't. Healthy Food was born from a belief that you shouldn't 
                 have to choose between eating well and enjoying your food. Better ingredients, better preparation, 
                 better results.
               </p>
@@ -160,7 +160,7 @@ export default function MenuHelly() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {hellyItems.map((item, i) => (
+            {healthyItems.map((item, i) => (
               <motion.div
                 key={item.name}
                 initial={{ opacity: 0, y: 40 }}
@@ -191,7 +191,7 @@ export default function MenuHelly() {
 
           <div className="text-center mt-16">
             <Link to="/contact" className="btn-gold rounded-sm inline-flex items-center gap-2">
-              Book Helly Food Catering <ArrowRight size={14} />
+              Book Healthy Food Catering <ArrowRight size={14} />
             </Link>
           </div>
         </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion, useInView } from "framer-motion";
 import { ChevronDown, Star, Users, Utensils, Leaf, ArrowRight, CheckCircle } from "lucide-react";
 import heroHome from "@/assets/hero-home.jpg";
-import heroHelly from "@/assets/hero-helly.jpg";
+import heroHealthy from "@/assets/hero-healthy.jpg";
 import heroCatering from "@/assets/hero-catering.jpg";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
@@ -33,7 +33,7 @@ export default function Index() {
   ];
 
   const steps = [
-    { num: "01", title: "Choose Your Menu", desc: "Select from Your Usual classics or our Helly Food healthy options." },
+    { num: "01", title: "Choose Your Menu", desc: "Select from Your Usual classics or our Healthy Food healthy options." },
     { num: "02", title: "Set Your Date & Count", desc: "Tell us your event date, time, and how many guests to expect." },
     { num: "03", title: "We Prep Everything Fresh", desc: "Your food is made from scratch on the day — never reheated, always fresh." },
     { num: "04", title: "Pickup or Delivery", desc: "We deliver to your venue or you can arrange pickup. Easy and stress-free." },
@@ -222,19 +222,19 @@ export default function Index() {
               className="group relative rounded-lg overflow-hidden h-[480px] cursor-pointer"
             >
               <img
-                src={heroHelly}
-                alt="Helly Food - Healthy Menu"
+                src={heroHealthy}
+                alt="Healthy Food - Healthy Menu"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
               <div className="absolute bottom-0 left-0 p-8">
                 <span className="font-body text-xs tracking-luxury uppercase text-gold block mb-3">Healthy Alternatives</span>
-                <h3 className="font-display text-3xl font-bold mb-3">Helly Food</h3>
+                <h3 className="font-display text-3xl font-bold mb-3">Healthy Food</h3>
                 <p className="font-body text-sm text-foreground/70 mb-6 max-w-xs">
                   Fresh, nutritious meals that don't compromise on flavour. Better bread, better meat, better you.
                 </p>
                 <Link
-                  to="/menu-helly"
+                  to="/menu-healthy"
                   className="btn-gold rounded-sm inline-flex items-center gap-2 text-xs"
                 >
                   View Menu <ArrowRight size={14} />
@@ -299,7 +299,7 @@ export default function Index() {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[heroCatering, heroHome, heroHelly].map((img, i) => (
+            {[heroCatering, heroHome, heroHealthy].map((img, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, scale: 0.95 }}

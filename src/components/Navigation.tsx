@@ -7,7 +7,7 @@ import logo from "@/assets/logo.svg";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Your Usual", href: "/menu-usual" },
-  { label: "Helly Food", href: "/menu-helly" },
+  { label: "Healthy Food", href: "/menu-healthy" },
   { label: "How It Works", href: "/how-it-works" },
   { label: "Gallery", href: "/gallery" },
   { label: "About", href: "/about" },
@@ -34,17 +34,16 @@ export default function Navigation() {
         initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
             ? "bg-obsidian/95 backdrop-blur-md border-b border-gold/10 shadow-dark"
             : "bg-transparent"
-        }`}
+          }`}
       >
         <div className="container mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between h-24">
             {/* Logo */}
             <Link to="/" className="flex-shrink-0">
-            <img
+              <img
                 src={logo}
                 alt="Apex SVC Catering Services"
                 className="h-20 w-auto"
@@ -57,19 +56,17 @@ export default function Navigation() {
                 <Link
                   key={link.href}
                   to={link.href}
-                  className={`relative font-body text-xs tracking-luxury uppercase font-medium transition-colors duration-300 group ${
-                    location.pathname === link.href
+                  className={`relative font-body text-xs tracking-luxury uppercase font-medium transition-colors duration-300 group ${location.pathname === link.href
                       ? "text-gold"
                       : "text-foreground/70 hover:text-gold"
-                  }`}
+                    }`}
                 >
                   {link.label}
                   <span
-                    className={`absolute -bottom-1 left-0 h-px bg-gradient-gold transition-all duration-300 ${
-                      location.pathname === link.href
+                    className={`absolute -bottom-1 left-0 h-px bg-gradient-gold transition-all duration-300 ${location.pathname === link.href
                         ? "w-full"
                         : "w-0 group-hover:w-full"
-                    }`}
+                      }`}
                   />
                 </Link>
               ))}
@@ -116,11 +113,10 @@ export default function Navigation() {
                 >
                   <Link
                     to={link.href}
-                    className={`font-display text-3xl font-medium transition-colors ${
-                      location.pathname === link.href
+                    className={`font-display text-3xl font-medium transition-colors ${location.pathname === link.href
                         ? "text-gold"
                         : "text-foreground/70 hover:text-gold"
-                    }`}
+                      }`}
                   >
                     {link.label}
                   </Link>

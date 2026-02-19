@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import heroCatering from "@/assets/hero-catering.jpg";
 import heroHome from "@/assets/hero-home.jpg";
-import heroHelly from "@/assets/hero-helly.jpg";
+import heroHealthy from "@/assets/hero-healthy.jpg";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -13,7 +13,7 @@ const steps = [
     num: "01",
     title: "Choose Your Menu",
     subtitle: "Classic or Healthy",
-    desc: "Select from Your Usual fast-food favourites or our Helly Food healthy alternatives — or mix and match for your event.",
+    desc: "Select from Your Usual fast-food favourites or our Healthy Food healthy alternatives — or mix and match for your event.",
     icon: "🍔",
     details: ["Browse our full menu options", "Mix & match from both menus", "Discuss dietary requirements", "Custom options available"],
   },
@@ -111,9 +111,8 @@ export default function HowItWorks() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.7 }}
-                className={`luxury-card rounded-lg p-8 cursor-pointer transition-all duration-300 ${
-                  activeStep === i ? "border-gold/60 shadow-gold" : ""
-                }`}
+                className={`luxury-card rounded-lg p-8 cursor-pointer transition-all duration-300 ${activeStep === i ? "border-gold/60 shadow-gold" : ""
+                  }`}
                 onClick={() => setActiveStep(i)}
               >
                 <div className="text-4xl mb-4">{step.icon}</div>
@@ -159,9 +158,8 @@ export default function HowItWorks() {
                     <button
                       key={i}
                       onClick={() => setActiveStep(i)}
-                      className={`w-8 h-1 rounded-full transition-all duration-300 ${
-                        activeStep === i ? "bg-gold w-16" : "bg-gold/30"
-                      }`}
+                      className={`w-8 h-1 rounded-full transition-all duration-300 ${activeStep === i ? "bg-gold w-16" : "bg-gold/30"
+                        }`}
                     />
                   ))}
                 </div>

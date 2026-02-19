@@ -17,7 +17,7 @@ const schema = z.object({
     required_error: "Please select an event type",
   }),
   guests: z.string().min(1, "Please enter guest count"),
-  menu: z.enum(["usual", "helly", "both"], { required_error: "Please select a menu" }),
+  menu: z.enum(["usual", "healthy", "both"], { required_error: "Please select a menu" }),
   message: z.string().trim().max(1000).optional(),
 });
 
@@ -264,7 +264,7 @@ export default function Contact() {
                       <div className="grid grid-cols-3 gap-3">
                         {[
                           { val: "usual", label: "Your Usual" },
-                          { val: "helly", label: "Helly Food" },
+                          { val: "healthy", label: "Healthy Food" },
                           { val: "both", label: "Both Menus" },
                         ].map((opt) => (
                           <label key={opt.val} className="cursor-pointer">
