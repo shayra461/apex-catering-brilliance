@@ -14,7 +14,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <img src={logo} alt="Apex SVC Catering Services" className="h-16 w-auto mb-6" />
+            <img src={logo} alt="Apex SVC Catering Services" className="h-24 w-auto mb-6" />
             <p className="font-body text-sm text-muted-foreground leading-relaxed max-w-xs mb-6">
               Scratch-made, guilt-free catering for events of all sizes. 
               A healthier twist on your favourite flavours — crafted with premium ingredients.
