@@ -298,7 +298,7 @@ export default function Index() {
             <div className="gold-divider mx-auto mt-6" />
           </AnimatedSection>
 
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[heroCatering, heroHome, heroHelly].map((img, i) => (
               <motion.div
                 key={i}
@@ -306,8 +306,7 @@ export default function Index() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1, duration: 0.6 }}
-                className={`relative rounded-lg overflow-hidden group ${i === 0 ? "col-span-2 lg:col-span-1 lg:row-span-2" : ""}`}
-                style={{ height: i === 0 ? "500px" : "240px" }}
+                className="relative rounded-lg overflow-hidden group h-72 md:h-80"
               >
                 <img
                   src={img}
